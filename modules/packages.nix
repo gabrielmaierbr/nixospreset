@@ -1,5 +1,6 @@
 { config, pkgs, ... }:
 {
+	nixpkgs.config.allowUnfree = true;
 	environment.systemPackages = with pkgs; [
   		brave
 		discord
@@ -18,8 +19,8 @@
 		tela-circle-icon-theme
 		bibata-cursors
 		nautilus
-		thunar
 		gvfs
 		udisks2
+		lact
   	];
 }

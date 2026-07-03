@@ -4,6 +4,7 @@
   imports =
     [
       ./hardware-configuration.nix
+      ./modules/driversAMD.nix
       ./modules/bootloader.nix
       ./modules/kernel.nix
       ./modules/network.nix
@@ -23,9 +24,8 @@
   services.upower.enable = true;
 
   services.printing.enable = true;
-  services.udisks2.enable = true;
-  services.gvfs.enable = true;
-  nixpkgs.config.allowUnfree = true;
+  
+  
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
