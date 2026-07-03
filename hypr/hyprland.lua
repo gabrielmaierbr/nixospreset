@@ -1,0 +1,11 @@
+require("configs/execs")
+require("configs/monitor")
+require("configs/decorations")
+require("configs/animations")
+require("configs/misc")
+require("configs/keybinds")
+require("configs/env")
+require("configs/input")
+require("configs/rules")
+
+require("noctalia").apply_theme()
