@@ -215,9 +215,6 @@
     hl.env("XDG_CURRENT_DESKTOP", "Hyprland")
     hl.env("XDG_SESSION_TYPE", "wayland")
     hl.env("XDG_SESSION_DESKTOP", "Hyprland")
-
-    hl.env("WLR_RENDERER_ALLOW_SOFTWARE","1")
-    hl.env("LIBGL_ALWAYS_SOFTWARE","1")
   '';
 
   xdg.configFile."hypr/configs/input.lua".text = ''
