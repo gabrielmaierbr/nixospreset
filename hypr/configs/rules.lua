@@ -40,6 +40,8 @@ hl.window_rule({
     match = { class = "kitty" },
     idle_inhibit = "focus",
     float = true,
+    no_blur = true,
+    opacity = "0.85"
 })
 
 hl.window_rule({

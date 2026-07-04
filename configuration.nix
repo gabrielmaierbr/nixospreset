@@ -16,17 +16,11 @@
       ./modules/sddm.nix
       ./modules/hyprland.nix
       ./modules/storageOptimization.nix
+      ./modules/services.nix
     ];
 
   networking.hostName = "nixos";
   
-  services.power-profiles-daemon.enable = true;
-  services.upower.enable = true;
-
-  services.printing.enable = true;
-  
-  
-
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
   # on your system were taken. It‘s perfectly fine and recommended to leave

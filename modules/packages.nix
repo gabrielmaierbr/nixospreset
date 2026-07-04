@@ -8,8 +8,6 @@
 		steam
 		spotify
 		noctalia-shell
-		kitty
-		foot
 		vscode
 		git
 		protonplus

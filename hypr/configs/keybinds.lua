@@ -1,5 +1,5 @@
 local win           = "SUPER"
-local terminal      = "foot"
+local terminal      = "kitty"
 local fileManager   = "nautilus --new-window"
 local browser       = "brave"
 local communication = "discord"

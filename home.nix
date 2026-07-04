@@ -6,6 +6,7 @@
 
   imports = [
     inputs.noctalia.homeModules.default
+    ./modules/terminal.nix
   ];
 
   programs.noctalia = {

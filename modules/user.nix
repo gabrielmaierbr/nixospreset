@@ -4,6 +4,7 @@
 	    	isNormalUser = true;
 	    	description = "Gabriel Maier";
 	    	extraGroups = [ "networkmanager" "wheel" ];
+			shell = pkgs.fish;
 	    	packages = with pkgs; [
 				
 	    	];
