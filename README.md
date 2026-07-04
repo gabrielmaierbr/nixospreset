@@ -12,3 +12,9 @@ Update noctalia:
 cd /etc/nixos
 sudo nix flake lock --update-input noctalia
 sudo nixos-rebuild switch --flake .#nixos
+
+
+Update de tudo:
+
+sudo nix flake update
+sudo nixos-rebuild switch --flake .#nixos
