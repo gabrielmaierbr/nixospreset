@@ -26,9 +26,13 @@ sudo nixos-rebuild switch --flake .#nixos
 Configurar Usuário em home.nix
 
 home.username = "SEU-USER";
+
 home.homeDirectory = "/home/SEU-USER";
 
+
+
 Configurar Usuário em /modules/user.nix
+
 
 Configurar Monitor em /modules/hyprland-nix.lua (onde ele gera o monitor.lua), alterar LarguraXAltura@Hz e bitdepth a depender de quantos bits é a tela
 
