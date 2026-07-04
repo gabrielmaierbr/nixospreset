@@ -25,5 +25,7 @@
 		wine
 		wine64
 		winetricks
+		polkit_gnome
+		gnome-keyring
   	];
 }

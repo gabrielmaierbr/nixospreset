@@ -11,11 +11,12 @@
       ./modules/locale.nix
       ./modules/audio.nix
       ./modules/packages.nix
+      ./modules/steam.nix
       ./modules/input.nix
       ./modules/user.nix
       ./modules/sddm.nix
       ./modules/hyprland.nix
-      ./modules/storageOptimization.nix
+      ./modules/garbage.nix
       ./modules/services.nix
     ];
 
@@ -32,5 +33,6 @@
   nix.settings = {
     extra-substituters = [ "https://noctalia.cachix.org" ];
     extra-trusted-public-keys = [ "noctalia.cachix.org-1:pCOR47nnMEo5thcxNDtzWpOxNFQsBRglJzxWPp3dkU4=" ];
+    experimental-features = [ "nix-command" "flakes" ];
   };
 }

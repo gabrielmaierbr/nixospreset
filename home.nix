@@ -7,6 +7,7 @@
   imports = [
     inputs.noctalia.homeModules.default
     ./modules/terminal.nix
+    ./modules/hyprland-lua.nix
   ];
 
   programs.noctalia = {

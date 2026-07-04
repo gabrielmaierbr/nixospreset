@@ -1,28 +1,24 @@
 { config, pkgs, ... }:
 {
-	services.power-profiles-daemon.enable = true;
+    services.power-profiles-daemon.enable = true;
     services.upower.enable = true;
     services.printing.enable = true;
+    services.udisks2.enable = true;
+    services.gvfs.enable = true;
+    programs.fish.enable = true;
+    security.polkit.enable = true;
 
-	programs.steam = {
-	 	enable = true;
-		remotePlay.openFirewall = true;
-    	dedicatedServer.openFirewall = true;
-	};
-
-	programs.gamemode.enable = true;
-	programs.steam.package = pkgs.steam.override {
-	  extraPkgs = pkgs': with pkgs'; [
-	    libXcursor
-	    libXi
-	    libXinerama
-	    libXScrnSaver
-	    libpng
-	    libpulseaudio
-	    libvorbis
-	    stdenv.cc.cc.lib
-	    libkrb5
-	    keyutils
-	  ];
-	};
+    systemd.user.services.polkit-gnome-authentication-agent-1 = {
+        description = "polkit-gnome-authentication-agent-1";
+        wantedBy = [ "graphical-session.target" ];
+        wants = [ "graphical-session.target" ];
+        after = [ "graphical-session.target" ];
+        serviceConfig = {
+            Type = "simple";
+            ExecStart = "${pkgs.polkit_gnome}/libexec/polkit-gnome-authentication-agent-1";
+            Restart = "on-failure";
+            RestartSec = 1;
+            TimeoutStopSec = 10;
+        };
+    };
 }
