@@ -5,7 +5,6 @@
   		brave
 		discord
 		equicord
-		steam
 		spotify
 		noctalia-shell
 		vscode
@@ -20,5 +19,11 @@
 		gvfs
 		udisks2
 		lact
+		heroic
+		wineWow64Packages.stableFull
+		wineWow64Packages.waylandFull
+		wine
+		wine64
+		winetricks
   	];
 }
