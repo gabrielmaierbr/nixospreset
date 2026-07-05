@@ -200,7 +200,7 @@
   '';
 
   xdg.configFile."hypr/configs/env.lua".text = ''
-    local cursorTheme = "Bibata-Original-Classic"
+    local cursorTheme = "Bibata-Modern-Ice"
     local cursorSize = "24"
 
     hl.env("XCURSOR_SIZE", cursorSize)
