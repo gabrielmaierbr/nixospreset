@@ -16,6 +16,7 @@
     ./modules/network.nix
     ./modules/locale.nix
     ./modules/input.nix
+    ./modules/aliases.nix
     ./modules/garbage.nix
   ];
 

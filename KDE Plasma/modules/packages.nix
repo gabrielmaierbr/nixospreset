@@ -31,5 +31,6 @@
         obs-studio
         vlc
         faugus-launcher
+        prismlauncher
     ];
 }

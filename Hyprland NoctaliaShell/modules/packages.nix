@@ -19,12 +19,10 @@
         protonplus
         vscode
         heroic
-        plasma-panel-colorizer
         tela-circle-icon-theme
         papirus-folders
         papirus-icon-theme
         bibata-cursors
-        klassy
         starship
         kitty
         lact
@@ -36,5 +34,6 @@
         obs-studio
         vlc
         faugus-launcher
+        prismlauncher
     ];
 }
