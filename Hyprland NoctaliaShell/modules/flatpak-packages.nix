@@ -4,7 +4,7 @@
         enable = true;
         packages = [
             #"net.waterfox.waterfox"
-            #"org.onlyoffice.desktopeditors"
+            "org.onlyoffice.desktopeditors"
         ];
     };
 }
