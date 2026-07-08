@@ -9,7 +9,7 @@
         cava
         noctalia-shell
         nwg-look
-        kdePackage.qt6ct
+        kdePackages.qt6ct
         patch
         nautilus
         brave
@@ -35,5 +35,6 @@
         vlc
         faugus-launcher
         prismlauncher
+        stremio-linux-shell
     ];
 }

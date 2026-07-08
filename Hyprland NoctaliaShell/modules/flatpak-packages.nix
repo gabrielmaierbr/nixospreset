@@ -3,7 +3,8 @@
     services.flatpak = {
         enable = true;
         packages = [
-            #net.waterfox.waterfox
+            "net.waterfox.waterfox"
+            "org.onlyoffice.desktopeditors"
         ];
     };
 }
